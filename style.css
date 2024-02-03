@@ -1,0 +1,79 @@
+
+/* *{
+    text-align: center;
+} */
+body > *{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(221, 241, 241);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 
+    /* 200px 200px 300px 300px 100px;  */
+    1fr 2fr 3fr 2fr 0.1fr;
+    gap: 20px;
+    border: 10px solid #7c7cb1;
+}
+.pic{
+    /* position:relative; */
+    /* top: 250px; */
+    height: 100%;
+    width: 100%;
+    /* height: 400px;
+    width: 400px; */
+    grid-area: 1/2/3/3;
+    border-radius: 40%;
+    border: 10px solid black;
+}
+.heading{
+    grid-area: 2/3/3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    font-family: 'Protest Strike', sans-serif;
+/* font-family: 'Single Day', cursive; */
+    
+}
+.name{
+    font-size: 4rem;
+}
+.year{
+    /* grid-area: 3/2/4/3; */
+    font-size: 2rem;
+}
+.content{
+    grid-area: 3/2/4/4;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Single Day', cursive;
+}
+.content>h1{
+    font-family: 'Protest Strike', sans-serif;
+/* font-family: 'Single Day', cursive; */
+}
+.list{
+    grid-area: 4/2/5/4;
+    text-align: justify;
+    font-family: 'Single Day', cursive;
+}
+.list h4{
+    font-size: 2rem;
+    font-family: 'Protest Strike', sans-serif;
+}
+.footer{
+    grid-area: 5/2/6/4;
+    /* font-family: 'Single Day', cursive; */
+    font-family: 'Protest Strike', sans-serif;
+    font-weight: 400;
+    
+}
